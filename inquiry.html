@@ -146,10 +146,16 @@
                   <i class="fa fa-calendar text-white" aria-hidden="true"></i>
                     <span class="lan-4">Category</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="userManagement.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i>Add Category</a></li>
-                    <li><a href="categoryManagement.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Category List</a></li>
-                    <li><a href="categoryManagementList.html"><i class="fa fa-list text-white" aria-hidden="true"></i>SubCategory List</a></li>
-                     <li><a href="subCategory.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Add SubCategory List</a></li>
+                   <li><a href="addcategoryManagement.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i>Add Category</a></li>
+                   <li><a href="categoryManagementList.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Category List</a></li>
+                  </ul>
+                </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <i class="fa fa-server text-white" aria-hidden="true"></i>
+                    <span class="lan-6">Sub Category</span></a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="subCategory.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Add SubCategory List</a></li>
+                    <li><a href="subCategorylist.html"><i class="fa fa-list text-white" aria-hidden="true"></i>SubCategory List</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -185,6 +191,11 @@
                     <li><a href="popularCategoryList.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Populary Category List</a></li>
                   </ul>
                 </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link" href="userManagement.html">
+                  <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
+                  <span class="lan-2">User Management</span></a>
+                </li>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
           </nav>
@@ -199,10 +210,13 @@
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       
-                        <svg class="stroke-icon">
-                          <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
-                        </svg></a></li>
+                    <li class="breadcrumb-item">
+                        <a href="index.html">                                       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2A3650" viewBox="0 0 24 24">
+                          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        </a>
+                    </li>
                     <!-- <li class="breadcrumb-item">Design</li> -->
                     <li class="breadcrumb-item active">Business Listing</li>
                   </ol>
@@ -238,42 +252,9 @@
                             <td class="text-center table-data">22/05/2025</td>
                             
                             <td class="d-flex justify-content-center"> 
-                             <div class="dropdown">
-                              <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-ban" viewBox="0 0 16 16">
-                                      <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
-                                    </svg>
-                                    Block</a>
-                                    </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #28a745" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                      <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                      <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Approve</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dc3545" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                      <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                    </svg> 
-                                    Delete</a>
-                                </li>                                                                                                            
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#007bff " class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
-                                      <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Image Approve</a></li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#17a2b8" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                                    </svg>
-                                    View</a>
-                                </li>
+                              <ul class="action"> 
+                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                               </ul>
-                            </div>
                             </td>
                           </tr>
                           <tr>
@@ -283,42 +264,9 @@
                             <td class="text-center table-data">xyz</td>
                             <td class="text-center table-data">26/05/2025</td>
                             <td class="d-flex justify-content-center"> 
-                             <div class="dropdown">
-                              <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-ban" viewBox="0 0 16 16">
-                                      <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
-                                    </svg>
-                                    Block</a>
-                                    </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #28a745" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                      <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                      <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Approve</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dc3545" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                      <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                    </svg> 
-                                    Delete</a>
-                                </li>                                                                                                            
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#007bff " class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
-                                      <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Image Approve</a></li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#17a2b8" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                                    </svg>
-                                    View</a>
-                                </li>
+                              <ul class="action"> 
+                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                               </ul>
-                            </div>
                             </td>
                           </tr>
                            <tr>
@@ -328,42 +276,9 @@
                             <td class="text-center table-data">xyz</td>
                             <td class="text-center table-data">26/05/2025</td>
                             <td class="d-flex justify-content-center"> 
-                             <div class="dropdown">
-                              <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-ban" viewBox="0 0 16 16">
-                                      <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
-                                    </svg>
-                                    Block</a>
-                                    </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #28a745" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                      <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                      <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Approve</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dc3545" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                      <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                    </svg> 
-                                    Delete</a>
-                                </li>                                                                                                            
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#007bff " class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
-                                      <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Image Approve</a></li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#17a2b8" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                                    </svg>
-                                    View</a>
-                                </li>
+                              <ul class="action"> 
+                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                               </ul>
-                            </div>
                             </td>
                           </tr>
                            <tr>
@@ -373,42 +288,9 @@
                             <td class="text-center table-data">xyz</td>
                             <td class="text-center table-data">26/05/2025</td>
                             <td class="d-flex justify-content-center"> 
-                             <div class="dropdown">
-                              <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-ban" viewBox="0 0 16 16">
-                                      <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
-                                    </svg>
-                                    Block</a>
-                                    </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #28a745" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                      <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                      <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Approve</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dc3545" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                      <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                    </svg> 
-                                    Delete</a>
-                                </li>                                                                                                            
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#007bff " class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
-                                      <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
-                                    </svg>
-                                    Image Approve</a></li>
-                                <li><a class="dropdown-item" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#17a2b8" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                                    </svg>
-                                    View</a>
-                                </li>
+                              <ul class="action"> 
+                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                               </ul>
-                            </div>
                             </td>
                           </tr>
                           </tr>

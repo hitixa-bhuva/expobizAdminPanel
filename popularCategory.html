@@ -146,10 +146,16 @@
                   <i class="fa fa-calendar text-white" aria-hidden="true"></i>
                     <span class="lan-4">Category</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="userManagement.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i>Add Category</a></li>
-                    <li><a href="categoryManagement.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Category List</a></li>
-                    <li><a href="categoryManagementList.html"><i class="fa fa-list text-white" aria-hidden="true"></i>SubCategory List</a></li>
-                     <li><a href="subCategory.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Add SubCategory List</a></li>
+                   <li><a href="addcategoryManagement.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i>Add Category</a></li>
+                   <li><a href="categoryManagementList.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Category List</a></li>
+                  </ul>
+                </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <i class="fa fa-server text-white" aria-hidden="true"></i>
+                    <span class="lan-6">Sub Category</span></a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="subCategory.html"><i class="fa fa-list text-white" aria-hidden="true"></i>Add SubCategory List</a></li>
+                    <li><a href="subCategorylist.html"><i class="fa fa-list text-white" aria-hidden="true"></i>SubCategory List</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -185,6 +191,11 @@
                     <li><a href="popularCategoryList.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Populary Category List</a></li>
                   </ul>
                 </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link" href="userManagement.html">
+                  <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
+                  <span class="lan-2">User Management</span></a>
+                </li>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
           </nav>
@@ -195,16 +206,19 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Design Add</h4>
+                  <h4>Popular Category Add</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       
-                        <svg class="stroke-icon">
-                          <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
-                        </svg></a></li>
-                    <li class="breadcrumb-item">Design List</li>
-                    <li class="breadcrumb-item active">Design Add</li>
+                    <li class="breadcrumb-item">
+                        <a href="index.html">                                       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2A3650" viewBox="0 0 24 24">
+                          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <!-- <li class="breadcrumb-item">Popular Category List</li> -->
+                    <li class="breadcrumb-item active">Popular Category Add</li>
                   </ol>
                 </div>
               </div>
@@ -267,39 +281,37 @@
                                                   <div class="card">
                                                     <div class="card-body">
                                                       <div class="table-responsive">
-                                                        <table class="display" id="basic-1">
-                                                          <thead>
-                                                            <tr class="bg-light text-dark">
-                                                              <th class="text-center">No.</th>
-                                                              <th class="text-center">Sub Category </th>
-                                                              <th class="text-center">Action</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                              <td class="text-center table-data">1</td>
-                                                              <td class="text-center table-data">6</td>
-                                                              <td class="d-flex justify-content-center"> 
-                                                                <ul class="action"> 
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col" class="text-center bg-dark-subtle text-dark">No.</th>
+                                                                <th scope="col" class="text-center bg-dark-subtle text-dark">Sub Category</th>
+                                                                <th scope="col" class="text-center bg-dark-subtle text-dark">Action</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <th scope="row" class="text-center">1</th>
+                                                                <td class="text-center">Mark</td>
+                                                                <td class="d-flex justify-content-center">
+                                                                  <ul class="action"> 
                                                                   <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                                                   <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                                                                 </ul>
-                                                              </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-center table-data">2</td>
-                                                              <td class="text-center table-data">6</td>
-                                                              <td class="d-flex justify-content-center"> 
-                                                                <ul class="action"> 
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <th scope="row" class="text-center">2</th>
+                                                                <td class="text-center">Jacob</td>
+                                                                <td class="d-flex justify-content-center">
+                                                                  <ul class="action"> 
                                                                   <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                                                   <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                                                                 </ul>
-                                                              </td>
-                                                            </tr>
-                                                         
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
                                                       </div>
                                                     </div>
                                                   </div>
@@ -310,12 +322,6 @@
                                     </div>
                                   </div>
                                 </div>
-                                <style>
-                                  .ck-blurred{
-                                    height : 200px;
-                                  }
-                                </style>
-                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
                                 </form>
                               </div>
                             </div>

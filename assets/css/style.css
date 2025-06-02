@@ -4168,12 +4168,26 @@ table tbody tr {
   }
 }
 .default-according.style-1 button[aria-expanded=true]:before {
-  content: "\eb73";
-  font-family: IcoFont;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'><path d='M17.29 14.71a1 1 0 0 1-1.41 0L12 10.83l-3.88 3.88a1 1 0 0 1-1.41-1.41l4.59-4.59a1 1 0 0 1 1.41 0l4.59 4.59a1 1 0 0 1 0 1.41z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
 }
 .default-according.style-1 button[aria-expanded=false]:before {
-  content: "\eb7a";
-  font-family: IcoFont;
+   content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 24 24"><path d="M6.71 9.29a1 1 0 0 1 1.41 0L12 13.17l3.88-3.88a1 1 0 1 1 1.41 1.41l-4.59 4.59a1 1 0 0 1-1.41 0L6.7 10.7a1 1 0 0 1 0-1.41z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .accordion-button .svg-color {
