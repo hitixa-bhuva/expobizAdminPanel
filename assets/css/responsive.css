@@ -2550,12 +2550,20 @@
   div.dataTables_wrapper div.dataTables_paginate .paginate_button.previous a {
     border: none !important;
   }
-  div.dataTables_wrapper div.dataTables_paginate .paginate_button.previous:before {
-    content: "\e64a";
-    font-family: themify;
-    font-size: 11px;
-    padding: 0 5px;
-  }
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.previous::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  
+}
+
   div.dataTables_wrapper div.dataTables_paginate .paginate_button.next {
     font-size: 0;
     padding: 0;
@@ -2563,12 +2571,19 @@
   div.dataTables_wrapper div.dataTables_paginate .paginate_button.next a {
     border: none !important;
   }
-  div.dataTables_wrapper div.dataTables_paginate .paginate_button.next:before {
-    content: "\e649";
-    font-family: themify;
-    font-size: 11px;
-    padding: 0 5px;
-  }
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.next::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
   div.dataTables_wrapper .dataTables_filter {
     margin-bottom: 15px;
   }
