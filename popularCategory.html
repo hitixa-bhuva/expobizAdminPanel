@@ -147,7 +147,6 @@
                   <i class="fa fa-tags text-white" aria-hidden="true"></i>
                     <span class="lan-4">Category</span></a>
                   <ul class="sidebar-submenu">
-                   <li><a href="addcategoryManagement.html"><i class="fa fa-plus-square text-white me-3" aria-hidden="true"></i>Add Category</a></li>
                    <li><a href="categoryManagementList.html"><i class="fa fa-list text-white me-3" aria-hidden="true"></i>Category List</a></li>
                   </ul>
                 </li>
@@ -155,7 +154,6 @@
                   <i class="fa fa-th-large text-white" aria-hidden="true"></i>
                     <span class="lan-6">Sub Category</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="subCategory.html"><i class="fa fa-plus-square text-white me-3" aria-hidden="true"></i>Add SubCategory List</a></li>
                     <li><a href="subCategorylist.html"><i class="fa fa-list text-white me-3" aria-hidden="true"></i>SubCategory List</a></li>
                   </ul>
                 </li>
@@ -163,7 +161,6 @@
                   <i class="fa fa-briefcase text-white" aria-hidden="true"></i>
                     <span class="lan-6">Bussiness</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="businessListingView.html"><i class="fa fa-plus-square text-white me-3" aria-hidden="true"></i> Add Bussiness</a></li>
                     <li><a href="businessListing.html"><i class="fa fa-list text-white me-3" aria-hidden="true"></i> Bussiness List</a></li>
                   </ul>
                 </li>
@@ -188,15 +185,16 @@
                   <i class="fa fa-thumbs-up text-white" aria-hidden="true"></i>
                   <span class="lan-7">Populary</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="popularCategory.html"><i class="fa fa-plus-square text-white me-3" aria-hidden="true"></i> Add Populary Category</a></li>
                     <li><a href="popularCategoryList.html"><i class="fa fa-list text-white me-3" aria-hidden="true"></i> Populary Category List</a></li>
                   </ul>
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                  <a class="sidebar-link" href="userManagement.html">
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                   <i class="fa fa-users text-white" aria-hidden="true"></i>
-                  <span class="lan-2">User Management</span></a>
-                </li>
+                  <span class="lan-7">Team</span></a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="teamlist.html"><i class="fa fa-list text-white me-3" aria-hidden="true"></i> Team List</a></li>
+                  </ul>
+                </li> 
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
           </nav>
@@ -218,8 +216,8 @@
                         </svg>
                         </a>
                     </li>
-                    <!-- <li class="breadcrumb-item">Popular Category List</li> -->
-                    <li class="breadcrumb-item active">Popular Category Add</li>
+                    <li class="breadcrumb-item">Popular Category</li>
+                    <li class="breadcrumb-item active">Popular Category Form</li>
                   </ol>
                 </div>
               </div>
@@ -243,11 +241,9 @@
                                       class="txt-danger">*</span></label>
                                     <select class="form-select" id="customState-wizard" required="">
                                       <option selected="" disabled="" value="">Select Category</option>
-                                      <option>12 * 12 </option>
-                                      <option>13 * 13 </option>
-                                      <option>14 * 14 </option>
-                                      <option>15 * 15</option>
-                                      <option>16 * 16 </option>
+                                      <option>Home Services</option>
+                                      <option>Health & Fitness </option>  
+                                      <option>Education</option>
                                     </select>
                                     <div class="invalid-feedback">Please select a valid state.</div>
                                   </div>
@@ -255,12 +251,16 @@
                                   <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
                                     <h4>Select Category</h4>
                                     <div class="row mt-3">
-                                        
-                                          <div class="col-sm-5">
-                                            <label class="form-label" for="customSequence">Sub Category </label>
-                                            <input class="form-control" id="customSequence" type="Sequence" placeholder="Sub Category" required="">
-                                            <div class="valid-feedback">Looks good!</div>
-                                          </div>
+                                        <div class="col-sm-5">
+                                    <label class="form-label" for="customState-wizard">Sub Category<span
+                                      class="txt-danger">*</span></label>
+                                    <select class="form-select" id="customState-wizard" required="">
+                                      <option selected="" disabled="" value="">Select Sub Category</option>
+                                      <option>All Option</option>
+                                      <option>AC Service & Repair</option>  
+                                    </select>
+                                    <div class="invalid-feedback">Please select a valid state.</div>
+                                  </div>
                                           <div class="col-sm-5"> 
                                             <label class="form-label" for="formFile1">Choose Logo File<span
                                               class="txt-danger">*</span></label>
@@ -293,20 +293,20 @@
                                                             <tbody>
                                                               <tr>
                                                                 <th scope="row" class="text-center">1</th>
-                                                                <td class="text-center">Mark</td>
+                                                                <td class="text-center">AC Service & Repair</td>
                                                                 <td class="d-flex justify-content-center">
                                                                   <ul class="action"> 
-                                                                  <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
+                                                                  <li class="edit"> <a href="popularCategory.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                                                   <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                                                                 </ul>
                                                                 </td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row" class="text-center">2</th>
-                                                                <td class="text-center">Jacob</td>
+                                                                <td class="text-center">All Option</td>
                                                                 <td class="d-flex justify-content-center">
                                                                   <ul class="action"> 
-                                                                  <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
+                                                                  <li class="edit"> <a href="popularCategory.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                                                   <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                                                                 </ul>
                                                                 </td>
