@@ -197,7 +197,7 @@
                 <li class="sidebar-list">
                   <i class="fa fa-thumb-tack"></i>
                   <a class="sidebar-link sidebar-title" href="#">
-                    <i class="fa fa-users text-white" aria-hidden="true"></i>
+                    <i class="fa fa-handshake-o text-white" aria-hidden="true"></i>
                     <span class="lan-6">Channel Partner</span>
                   </a>
                   <ul class="sidebar-submenu">
@@ -221,7 +221,7 @@
                 <li class="sidebar-list">
                     <i class="fa fa-thumb-tack"></i>
                     <a class="sidebar-link sidebar-title" href="#">
-                      <i class="fa fa-handshake-o text-white" aria-hidden="true"></i>
+                      <i class="fa fa-users text-white" aria-hidden="true"></i>
                       <span class="lan-6">Referral</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -302,6 +302,7 @@
                     <table class="table table-hover">
                       <thead>
                         <tr>
+                          <th scope="col"  class="fw-bold">No.</th>
                           <th scope="col"  class="fw-bold">Customer Name</th>
                           <th scope="col"  class="fw-bold">Type</th>
                           <th scope="col"  class="fw-bold">How Many Refferal Use?</th>
@@ -311,6 +312,7 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <th scope="row">1</th>
                           <td>Ravi Mehta</td>
                           <td>Business</td>
                           <td>5</td>
@@ -322,6 +324,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <th scope="row">2</th>
                           <td>Sonali Desai</td>
                           <td>Channel Partner</td>
                           <td>2</td>
@@ -333,6 +336,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <th scope="row">3</th>
                           <td>Ajay Trivedi</td>
                           <td>Business</td>
                           <td>4</td>
@@ -344,6 +348,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <th scope="row">4</th>
                           <td>Neha Sharma</td>
                           <td>Channel Partner</td>
                           <td>3</td>
@@ -355,6 +360,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <th scope="row">5</th>
                           <td>Kunal Bhatt</td>
                           <td>Business</td>
                           <td>6</td>
@@ -368,6 +374,38 @@
                       </tbody>
                     </table>
                   </div>
+                  <div class="d-flex justify-content-between align-items-center p-3">
+                     <div class="d-flex align-items-center">
+                      <span class="me-2 d-flex align-"> Show </span>
+                      <select class="form-select w-auto" aria-label="Show entries">
+                       <option selected>10</option>
+                       <option value="25">25</option>
+                       <option value="50">50</option>
+                       <option value="all">All</option>
+                     </select>
+                     <span class="ms-2"> Entries </span>
+                     </div>
+               
+                     <nav aria-label="Page navigation">
+                       <ul class="pagination pagination-dark pagin-border-sepagination-dark mb-0">
+                         <li class="page-item disabled">
+                           <a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a>
+                         </li>
+                         <li class="page-item">
+                           <a class="page-link" href="javascript:void(0)">1</a>
+                         </li>
+                         <li class="page-item active">
+                           <a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a>
+                         </li>
+                         <li class="page-item">
+                           <a class="page-link" href="javascript:void(0)">3</a>
+                         </li>
+                         <li class="page-item">
+                           <a class="page-link" href="javascript:void(0)">Next</a>
+                         </li>
+                       </ul>
+                     </nav>
+                   </div>
                 </div>
               </div>
             </div>

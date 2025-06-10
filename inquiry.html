@@ -197,7 +197,7 @@
                 <li class="sidebar-list">
                   <i class="fa fa-thumb-tack"></i>
                   <a class="sidebar-link sidebar-title" href="#">
-                    <i class="fa fa-users text-white" aria-hidden="true"></i>
+                    <i class="fa fa-handshake-o text-white" aria-hidden="true"></i>
                     <span class="lan-6">Channel Partner</span>
                   </a>
                   <ul class="sidebar-submenu">
@@ -221,7 +221,7 @@
                 <li class="sidebar-list">
                     <i class="fa fa-thumb-tack"></i>
                     <a class="sidebar-link sidebar-title" href="#">
-                      <i class="fa fa-handshake-o text-white" aria-hidden="true"></i>
+                      <i class="fa fa-users text-white" aria-hidden="true"></i>
                       <span class="lan-6">Referral</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -298,6 +298,12 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="card">
+                  <div class="d-flex justify-content-between align-items-center p-4">
+                    <h5 class="mb-0">Enquiry List</h5>
+                    <button class="btn btn-primary">
+                      <i class="fa fa-download me-1"></i> Export
+                    </button>
+                  </div>
                   <div class="table-responsive signal-table custom-scrollbar">
                     <table class="table table-hover">
                       <thead>
@@ -318,12 +324,12 @@
                           <td class="d-flex justify-content-center">
                             <ul class="action">
                               <li class="edit">
-                                <a href="#" class="bg-success p-2 rounded">
-                                  <i class="fa fa-pencil text-white" aria-hidden="true"></i>
+                                <a href="#" class="bg-danger p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
                               <li class="business">
-                                <a href="#" class="bg-primary p-2 rounded">
+                                <a href="#" class="bg-primary p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="User Profile">
                                   <i class="fa fa-user text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
@@ -339,12 +345,12 @@
                           <td class="d-flex justify-content-center">
                             <ul class="action">
                               <li class="edit">
-                                <a href="#" class="bg-success p-2 rounded">
-                                  <i class="fa fa-pencil text-white" aria-hidden="true"></i>
+                                <a href="#" class="bg-danger p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
                               <li class="business">
-                                <a href="#" class="bg-primary p-2 rounded">
+                                <a href="#" class="bg-primary p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="User Profile">
                                   <i class="fa fa-user text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
@@ -360,12 +366,12 @@
                           <td class="d-flex justify-content-center">
                             <ul class="action">
                               <li class="edit">
-                                <a href="#" class="bg-success p-2 rounded">
-                                  <i class="fa fa-pencil text-white" aria-hidden="true"></i>
+                                <a href="#" class="bg-danger p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
                               <li class="business">
-                                <a href="#" class="bg-primary p-2 rounded">
+                                <a href="#" class="bg-primary p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="User Profile">
                                   <i class="fa fa-user text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
@@ -381,12 +387,12 @@
                           <td class="d-flex justify-content-center">
                             <ul class="action">
                               <li class="edit">
-                                <a href="#" class="bg-success p-2 rounded">
-                                  <i class="fa fa-pencil text-white" aria-hidden="true"></i>
+                                <a href="#" class="bg-danger p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
                               <li class="business">
-                                <a href="#" class="bg-primary p-2 rounded">
+                                <a href="#" class="bg-primary p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="User Profile">
                                   <i class="fa fa-user text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
@@ -402,12 +408,12 @@
                           <td class="d-flex justify-content-center">
                             <ul class="action">
                               <li class="edit">
-                                <a href="#" class="bg-success p-2 rounded">
-                                  <i class="fa fa-pencil text-white" aria-hidden="true"></i>
+                                <a href="#" class="bg-danger p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
                               <li class="business">
-                                <a href="#" class="bg-primary p-2 rounded">
+                                <a href="#" class="bg-primary p-2 rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="User Profile">
                                   <i class="fa fa-user text-white" aria-hidden="true"></i>
                                 </a>
                               </li>
@@ -417,6 +423,38 @@
                       </tbody>
                     </table>
                   </div>
+                  <div class="d-flex justify-content-between align-items-center p-3">
+                     <div class="d-flex align-items-center">
+                      <span class="me-2 d-flex align-"> Show </span>
+                      <select class="form-select w-auto" aria-label="Show entries">
+                       <option selected>10</option>
+                       <option value="25">25</option>
+                       <option value="50">50</option>
+                       <option value="all">All</option>
+                     </select>
+                     <span class="ms-2"> Entries </span>
+                     </div>
+               
+                     <nav aria-label="Page navigation">
+                       <ul class="pagination pagination-dark pagin-border-sepagination-dark mb-0">
+                         <li class="page-item disabled">
+                           <a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a>
+                         </li>
+                         <li class="page-item">
+                           <a class="page-link" href="javascript:void(0)">1</a>
+                         </li>
+                         <li class="page-item active">
+                           <a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a>
+                         </li>
+                         <li class="page-item">
+                           <a class="page-link" href="javascript:void(0)">3</a>
+                         </li>
+                         <li class="page-item">
+                           <a class="page-link" href="javascript:void(0)">Next</a>
+                         </li>
+                       </ul>
+                     </nav>
+                   </div>
                 </div>
               </div>
             </div>

@@ -197,7 +197,7 @@
                 <li class="sidebar-list">
                   <i class="fa fa-thumb-tack"></i>
                   <a class="sidebar-link sidebar-title" href="#">
-                    <i class="fa fa-users text-white" aria-hidden="true"></i>
+                    <i class="fa fa-handshake-o text-white" aria-hidden="true"></i>
                     <span class="lan-6">Channel Partner</span>
                   </a>
                   <ul class="sidebar-submenu">
@@ -221,7 +221,7 @@
                 <li class="sidebar-list">
                     <i class="fa fa-thumb-tack"></i>
                     <a class="sidebar-link sidebar-title" href="#">
-                      <i class="fa fa-handshake-o text-white" aria-hidden="true"></i>
+                      <i class="fa fa-users text-white" aria-hidden="true"></i>
                       <span class="lan-6">Referral</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -323,65 +323,64 @@
                               <div class="tab-content" id="advance-option-tabContent">
                                 <div class="tab-pane fade show active" id="manifest-option" role="tabpanel" aria-labelledby="manifest-option-tab">
                                   <div class="meta-body"> 
-                                    <form id="advance-tab">
-                                      <div class="row g-3 custom-input">
-                                        <div class="col-lg-6 col-sm-6">
-                                          <label class="form-label" for="exampleFormControlInput1">Business Name <span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInput1" type="text">
+                                   <form id="advance-tab">
+                                        <div class="row g-3 custom-input">
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="exampleFormControlInput1">Business Name <span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="exampleFormControlInput1" type="text" value="Your Business Name" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="exampleFormControlInputa">Refferal Code <span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="exampleFormControlInputa" type="number" value="12345" min="0" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="exampleFormControlInputb">Pincode<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="exampleFormControlInputb" type="number" value="380001" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="exampleFormControlInputc">Block Number<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="exampleFormControlInputc" type="number" value="10" readonly>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label for="aadhaarCard" class="form-label">Aadhaar Card Number <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="aadhaarCard" name="aadhaarCard" maxlength="12" pattern="\d{12}" placeholder="Enter 12-digit Aadhaar Number" value="123456789012" required readonly>
+                                            <div class="invalid-feedback">Please enter a valid 12-digit Aadhaar number.</div>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label for="panCard" class="form-label">PAN Card Number <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control text-uppercase" id="panCard" name="panCard" maxlength="10" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="Enter PAN Number (e.g. ABCDE1234F)" value="ABCDE1234F" required readonly>
+                                            <div class="invalid-feedback">Please enter a valid PAN number.</div>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="streetInput">Street<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="streetInput" type="text" value="Gandhi Road" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="areaInput">Area<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="areaInput" type="text" value="Navrangpura" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="landmarkInput">LandMark<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="landmarkInput" type="text" value="Near XYZ Mall" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="cityInput">City<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="cityInput" type="text" value="Ahmedabad" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="stateInput">State<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="stateInput" type="text" value="Gujarat" readonly>
+                                          </div>
+                                          <div class="col-lg-6 col-sm-6">
+                                            <label class="form-label" for="countryInput">Country<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="countryInput" type="text" value="India" readonly>
+                                          </div>
+                                          <div class="col-lg-12 col-sm-6">
+                                            <label class="form-label" for="googleMapLink">Google Map Link <span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="googleMapLink" type="url" placeholder="https://maps.google.com/..." value="https://maps.app.goo.gl/examplelink" readonly>
+                                          </div>
                                         </div>
-                                        <div class="col-lg-6 col-sm-6">
-                                          <label class="form-label" for="exampleFormControlInputa">Refferal Code <span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputa" type="number" value="" min="0">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputb">Pincode<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputb" type="number">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">Block Number<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="number">
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                          <label for="aadhaarCard" class="form-label">Aadhaar Card Number <span class="text-danger">*</span></label>
-                                          <input type="text" class="form-control" id="aadhaarCard" name="aadhaarCard" maxlength="12" pattern="\d{12}" placeholder="Enter 12-digit Aadhaar Number" required>
-                                          <div class="invalid-feedback">Please enter a valid 12-digit Aadhaar number.</div>
-                                        </div>
-                                      
-                                        <div class="col-md-6 mb-3">
-                                          <label for="panCard" class="form-label">PAN Card Number <span class="text-danger">*</span></label>
-                                          <input type="text" class="form-control text-uppercase" id="panCard" name="panCard" maxlength="10" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="Enter PAN Number (e.g. ABCDE1234F)" required>
-                                          <div class="invalid-feedback">Please enter a valid PAN number.</div>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">Street<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="number">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">Area<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="text">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">LandMark<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="text">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">City<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="text">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">State<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="text">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6"> 
-                                          <label class="form-label" for="exampleFormControlInputc">Country<span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="exampleFormControlInputc" type="text">
-                                        </div>
-                                        <div class="col-lg-12 col-sm-6"> 
-                                          <label class="form-label" for="googleMapLink">Google Map Link <span class="txt-danger">*</span></label>
-                                          <input class="form-control" id="googleMapLink" type="url" placeholder="https://maps.google.com/...">
-                                        </div>
-                                      </div>
-                                    </form>
+                                      </form>
                                   </div>
                                 </div>
                                 <div class="tab-pane fade" id="additional-option" role="tabpanel" aria-labelledby="additional-option-tab">
@@ -774,6 +773,38 @@
                                                 </tbody>
                                               </table>
                                             </div>
+                                            <div class="d-flex justify-content-between align-items-center p-3">
+                                                <div class="d-flex align-items-center">
+                                                 <span class="me-2 d-flex align-"> Show </span>
+                                                 <select class="form-select w-auto" aria-label="Show entries">
+                                                  <option selected>10</option>
+                                                  <option value="25">25</option>
+                                                  <option value="50">50</option>
+                                                  <option value="all">All</option>
+                                                </select>
+                                                <span class="ms-2"> Entries </span>
+                                                </div>
+               
+                                                <nav aria-label="Page navigation">
+                                                  <ul class="pagination pagination-dark pagin-border-sepagination-dark mb-0">
+                                                    <li class="page-item disabled">
+                                                      <a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                      <a class="page-link" href="javascript:void(0)">1</a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                      <a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                      <a class="page-link" href="javascript:void(0)">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                      <a class="page-link" href="javascript:void(0)">Next</a>
+                                                    </li>
+                                                  </ul>
+                                                </nav>
+                                              </div>
                                           </div>
                                         </div>
                                       </div>
