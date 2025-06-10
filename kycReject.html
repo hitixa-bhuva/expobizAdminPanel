@@ -198,7 +198,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Add Category</h4>
+                  <h4>KYC Reject</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
@@ -209,87 +209,220 @@
                         </svg>
                         </a>
                     </li>
-                    <li class="breadcrumb-item">Category</li>
-                    <li class="breadcrumb-item active">Category Form</li>
+                    <li class="breadcrumb-item">Business</li>
+                    <li class="breadcrumb-item active">KYC Reject</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid">
+           <div class="container-fluid basic_table">
             <div class="row">
-              <!-- Zero Configuration  Starts-->
-              <div class="col-md-12">
+              <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body">
-                    <div class="row shopping-wizard">
-                      <div class="col-12"> 
-                            <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
-                              <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
-                                <form class="row g-3 needs-validation" novalidate="">
-                              
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customState-wizard">Select Name<span
-                                      class="txt-danger">*</span></label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select Category</option>
-                                      <option>AC Services</option>
-                                      <option>Travel</option>
-                                      <option>Doctors</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid state.</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customUrl">Sequence</label>
-                                    <input class="form-control" id="customUrl" type="URL" placeholder=" Sequence" required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-12"> 
-                                            <label class="form-label" for="formFile1"> Category Icon<span class="txt-danger">*</span></label>
-                                            <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
-                                            <div class="invalid-feedback">Invalid form file selected</div>
-                                          </div>
-                                          <div class="col-sm-12"> 
-                                            <label class="form-label" for="formFile1">Sub Category Icon<span class="txt-danger">*</span></label>
-                                            <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
-                                            <div class="invalid-feedback">Invalid form file selected</div>
-                                          </div>
-                                <style>
-                                  .ck-blurred{
-                                    height : 200px;
-                                  }
-                                </style>
-                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
-                              
-                                
-                                <script>
-                                  // Initialize CKEditor
-                                  ClassicEditor
-                                    .create(document.querySelector('#editor'))
-                                    .catch(error => {
-                                      console.error(error);
-                                    });
-                                </script>
-                               
-                                
-                                  <div class="col-12 text-center mt-3">
-                                    <button class="btn btn-primary" type="submit">Save</button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                      </div>
-                      <!-- Container-fluid Ends-->
-                    </div>
+                  <div class="table-responsive signal-table custom-scrollbar">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col"  class="fw-bold">No.</th>
+                          <th scope="col"  class="fw-bold">Business Name</th>
+                          <th scope="col"  class="fw-bold">Address</th>
+                          <th scope="col"  class="fw-bold">Plan</th>
+                          <th scope="col"  class="fw-bold">Contact Number</th>
+                          <th scope="col"  class="fw-bold">Reject Date</th>
+                          <th scope="col"  class="fw-bold">Reject Remark</th>
+                          <th scope="col"  class="fw-bold">Referral code</th>
+                          <th scope="col"  class="fw-bold">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Star Plumbing</td>
+                              <td>123 City Road, Ahmedabad</td>
+                              <td>Premium</td>
+                              <td>9876543210</td>
+                              <td>2025-06-05</td>
+                              <td>Incomplete KYC Document</td>
+                              <td>REF12345</td>
+                              <td class="">
+                                <ul class="action">
+                                  <li class="edit">
+                                    <a href="businessView.html" class="bg-success p-2 rounded" title="View">
+                                      <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete ms-2">
+                                    <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                      <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="revert ms-2">
+                                    <a href="#" class="bg-primary p-2 rounded" title="Revert">
+                                      <i class="fa fa-undo text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>CityFix Plumbing</td>
+                              <td>456 Market St, Surat</td>
+                              <td>Basic</td>
+                              <td>9012345678</td>
+                              <td>2025-06-04</td>
+                              <td>Fake Address Provided</td>
+                              <td>REF98765</td>
+                              <td class="">
+                                <ul class="action">
+                                  <li class="edit">
+                                    <a href="businessView.html" class="bg-success p-2 rounded" title="View">
+                                      <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete ms-2">
+                                    <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                      <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="revert ms-2">
+                                    <a href="#" class="bg-primary p-2 rounded" title="Revert">
+                                      <i class="fa fa-undo text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>AquaFlow Experts</td>
+                              <td>78 Industrial Area, Rajkot</td>
+                              <td>Standard</td>
+                              <td>9988776655</td>
+                              <td>2025-06-02</td>
+                              <td>Duplicate Contact</td>
+                              <td>REF65432</td>
+                              <td class="">
+                                <ul class="action">
+                                  <li class="edit">
+                                    <a href="businessView.html" class="bg-success p-2 rounded" title="View">
+                                      <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete ms-2">
+                                    <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                      <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="revert ms-2">
+                                    <a href="#" class="bg-primary p-2 rounded" title="Revert">
+                                      <i class="fa fa-undo text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>QuickFix Services</td>
+                              <td>22 MG Road, Vadodara</td>
+                              <td>Premium</td>
+                              <td>9123456789</td>
+                              <td>2025-05-31</td>
+                              <td>Fake KYC ID</td>
+                              <td>REF32145</td>
+                              <td class="">
+                                <ul class="action">
+                                  <li class="edit">
+                                    <a href="businessView.html" class="bg-success p-2 rounded" title="View">
+                                      <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete ms-2">
+                                    <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                      <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="revert ms-2">
+                                    <a href="#" class="bg-primary p-2 rounded" title="Revert">
+                                      <i class="fa fa-undo text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>DrainCleaners</td>
+                              <td>Plot 8, Ring Road, Bhavnagar</td>
+                              <td>Basic</td>
+                              <td>9090909090</td>
+                              <td>2025-05-29</td>
+                              <td>Invalid Phone Number</td>
+                              <td>REF77654</td>
+                              <td class="">
+                                <ul class="action">
+                                  <li class="edit">
+                                    <a href="businessView.html" class="bg-success p-2 rounded" title="View">
+                                      <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete ms-2">
+                                    <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                      <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="revert ms-2">
+                                    <a href="#" class="bg-primary p-2 rounded" title="Revert">
+                                      <i class="fa fa-undo text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>WaterPro Solutions</td>
+                              <td>Near Bus Stand, Jamnagar</td>
+                              <td>Standard</td>
+                              <td>9845612378</td>
+                              <td>2025-05-27</td>
+                              <td>Incorrect GST Details</td>
+                              <td>REF11223</td>
+                              <td class="">
+                                <ul class="action">
+                                  <li class="edit">
+                                    <a href="businessView.html" class="bg-success p-2 rounded" title="View">
+                                      <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="delete ms-2">
+                                    <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                      <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="revert ms-2">
+                                    <a href="#" class="bg-primary p-2 rounded" title="Revert">
+                                      <i class="fa fa-undo text-white" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <!-- Zero Configuration  Ends-->
             </div>
           </div>
-      </div>
-          
+          </div>
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
@@ -302,6 +435,7 @@
             </div>
           </div>
         </footer>
+      </div>
     </div>
     <!-- latest jquery-->
     <script src="assets/js/jquery.min.js"></script>
@@ -327,5 +461,6 @@
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>
