@@ -275,103 +275,134 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Sub Category List</h4>
+                  <h4>Channel Partner</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                   <li class="breadcrumb-item">
+                    <li class="breadcrumb-item">
                         <a href="index.html">                                       
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2A3650" viewBox="0 0 24 24">
                           <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
                         </svg>
                         </a>
                     </li>
-                    <li class="breadcrumb-item">Sub Category</li>
-                    <li class="breadcrumb-item active">Sub Category List</li>
+                    <!-- <li class="breadcrumb-item">Channel Partner</li> -->
+                    <li class="breadcrumb-item active">Channel Partner</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="col-12 text-end mt-2 mb-3">
-            <a href="subCategory.html" class="btn btn-primary" type="submit">Add Sub Category</a>
-          </div>
+           <div class="container-fluid basic_table">
             <div class="row">
-              <!-- Zero Configuration  Starts-->
-              <div class="col-md-12">
-                <form class="row g-3 needs-validation" novalidate="">
-                                    <div class="col-sm-12">
-                                                  <div class="card">
-                                                    <div class="card-body">
-                                                      <div class="table-responsive">
-                                                        <table class="display" id="basic-1">
-                                                          <thead>
-                                                            <tr class="bg-light text-dark">
-                                                              <th class="text-center">No.</th>
-                                                              <th class="text-center">Sub Category Name</th>
-                                                              <th class="text-center">Sequence</th> 
-                                                              <th class="text-center">Category</th> 
-                                                              <th class="text-center">Action</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                              <td class="text-center table-data">1</td>
-                                                              <td class="text-center table-data">All Option</td>
-                                                              <td class="text-center table-data">1</td>
-                                                              <td class="text-center table-data">AC Services</td>
-                                                              <td class="d-flex justify-content-center"> 
-                                                                <ul class="action"> 
-                                                                  <li class="edit"> <a href="subCategory.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                                                </ul>
-                                                              </td>
-                                                            </tr>
-                                                           <tr>
-                                                              <td class="text-center table-data">2</td>
-                                                              <td class="text-center table-data">AC Service & Repair</td>
-                                                              <td class="text-center table-data">2</td>
-                                                              <td class="text-center table-data">AC Services</td>
-                                                              <td class="d-flex justify-content-center"> 
-                                                                <ul class="action"> 
-                                                                  <li class="edit"> <a href="subCategory.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                                                </ul>
-                                                              </td>
-                                                            </tr>
-                                                         
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                <style>
-                                  .ck-blurred{
-                                    height : 200px;
-                                  }
-                                </style>
-                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
-                              
-                                
-                                <script>
-                                  // Initialize CKEditor
-                                  ClassicEditor
-                                    .create(document.querySelector('#editor'))
-                                    .catch(error => {
-                                      console.error(error);
-                                    });
-                                </script>
-                                </form>
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="table-responsive signal-table custom-scrollbar">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col"  class="fw-bold">No.</th>
+                          <th scope="col"  class="fw-bold">Channel Partner Name</th>
+                          <th scope="col"  class="fw-bold">Email</th>
+                          <th scope="col"  class="fw-bold">Contact Number</th>
+                          <th scope="col"  class="fw-bold">Referral code</th>
+                          <th scope="col"  class="fw-bold">KYC Approve Date</th>
+                          <th scope="col"  class="fw-bold">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Rajesh Sharma</td>
+                          <td>rajesh.sharma@example.com</td>
+                          <td>+91 98765 12345</td>
+                          <td>REF2024A1</td>
+                          <td>2025-06-01</td>
+                          <td class="">
+                            <ul class="action mb-0">
+                              <li class="edit">
+                                <a href="#" class="bg-success p-2 rounded" title="View">
+                                  <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li class="delete ms-2">
+                                <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li class="delete ms-2">
+                              <a href="#" class="bg-dark p-2 rounded" title="Block">
+                                <i class="fa fa-ban text-white" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>2</td>
+                          <td>Priya Patel</td>
+                          <td>priya.patel@example.com</td>
+                          <td>+91 98220 56789</td>
+                          <td>REF2024B2</td>
+                          <td>2025-06-05</td>
+                          <td class="">
+                            <ul class="action mb-0">
+                              <li class="edit">
+                                <a href="#" class="bg-success p-2 rounded" title="View">
+                                  <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li class="delete ms-2">
+                                <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li class="delete ms-2">
+                              <a href="#" class="bg-dark p-2 rounded" title="Block">
+                                <i class="fa fa-ban text-white" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>3</td>
+                          <td>Imran Shaikh</td>
+                          <td>imran.shaikh@example.com</td>
+                          <td>+91 99110 44556</td>
+                          <td>REF2024C3</td>
+                          <td>2025-06-08</td>
+                          <td class="">
+                            <ul class="action mb-0">
+                              <li class="edit">
+                                <a href="#" class="bg-success p-2 rounded" title="View">
+                                  <i class="fa fa-eye text-white" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li class="delete ms-2">
+                                <a href="#" class="bg-danger p-2 rounded" title="Delete">
+                                  <i class="fa fa-trash-o text-white" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li class="delete ms-2">
+                              <a href="#" class="bg-dark p-2 rounded" title="Block">
+                                <i class="fa fa-ban text-white" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <!-- Zero Configuration  Ends-->
             </div>
           </div>
-      </div>
-          
+          </div>
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
@@ -384,6 +415,7 @@
             </div>
           </div>
         </footer>
+      </div>
     </div>
     <!-- latest jquery-->
     <script src="assets/js/jquery.min.js"></script>
@@ -409,5 +441,6 @@
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>

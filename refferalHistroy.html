@@ -275,103 +275,104 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Sub Category List</h4>
+                  <h4>Refferal History</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                   <li class="breadcrumb-item">
+                    <li class="breadcrumb-item">
                         <a href="index.html">                                       
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2A3650" viewBox="0 0 24 24">
                           <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
                         </svg>
                         </a>
                     </li>
-                    <li class="breadcrumb-item">Sub Category</li>
-                    <li class="breadcrumb-item active">Sub Category List</li>
+                    <!-- <li class="breadcrumb-item">Business</li> -->
+                    <li class="breadcrumb-item active">Refferal History</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="col-12 text-end mt-2 mb-3">
-            <a href="subCategory.html" class="btn btn-primary" type="submit">Add Sub Category</a>
-          </div>
+           <div class="container-fluid basic_table">
             <div class="row">
-              <!-- Zero Configuration  Starts-->
-              <div class="col-md-12">
-                <form class="row g-3 needs-validation" novalidate="">
-                                    <div class="col-sm-12">
-                                                  <div class="card">
-                                                    <div class="card-body">
-                                                      <div class="table-responsive">
-                                                        <table class="display" id="basic-1">
-                                                          <thead>
-                                                            <tr class="bg-light text-dark">
-                                                              <th class="text-center">No.</th>
-                                                              <th class="text-center">Sub Category Name</th>
-                                                              <th class="text-center">Sequence</th> 
-                                                              <th class="text-center">Category</th> 
-                                                              <th class="text-center">Action</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                              <td class="text-center table-data">1</td>
-                                                              <td class="text-center table-data">All Option</td>
-                                                              <td class="text-center table-data">1</td>
-                                                              <td class="text-center table-data">AC Services</td>
-                                                              <td class="d-flex justify-content-center"> 
-                                                                <ul class="action"> 
-                                                                  <li class="edit"> <a href="subCategory.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                                                </ul>
-                                                              </td>
-                                                            </tr>
-                                                           <tr>
-                                                              <td class="text-center table-data">2</td>
-                                                              <td class="text-center table-data">AC Service & Repair</td>
-                                                              <td class="text-center table-data">2</td>
-                                                              <td class="text-center table-data">AC Services</td>
-                                                              <td class="d-flex justify-content-center"> 
-                                                                <ul class="action"> 
-                                                                  <li class="edit"> <a href="subCategory.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                                                </ul>
-                                                              </td>
-                                                            </tr>
-                                                         
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                <style>
-                                  .ck-blurred{
-                                    height : 200px;
-                                  }
-                                </style>
-                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
-                              
-                                
-                                <script>
-                                  // Initialize CKEditor
-                                  ClassicEditor
-                                    .create(document.querySelector('#editor'))
-                                    .catch(error => {
-                                      console.error(error);
-                                    });
-                                </script>
-                                </form>
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="table-responsive signal-table custom-scrollbar">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col"  class="fw-bold">Customer Name</th>
+                          <th scope="col"  class="fw-bold">Type</th>
+                          <th scope="col"  class="fw-bold">How Many Refferal Use?</th>
+                          <th scope="col"  class="fw-bold">Refferal Code</th>
+                          <th scope="col"  class="fw-bold">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Ravi Mehta</td>
+                          <td>Business</td>
+                          <td>5</td>
+                          <td>REFRAVI05</td>
+                          <td>
+                            <a href="refferalActionHistroy.html" class="btn btn-info btn-sm">
+                              <i class="fa fa-history me-1"></i>History
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Sonali Desai</td>
+                          <td>Channel Partner</td>
+                          <td>2</td>
+                          <td>REFSONALI22</td>
+                          <td>
+                            <a href="refferalActionHistroy.html" class="btn btn-info btn-sm">
+                              <i class="fa fa-history me-1"></i>History
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Ajay Trivedi</td>
+                          <td>Business</td>
+                          <td>4</td>
+                          <td>REFAJAY44</td>
+                          <td>
+                            <a href="refferalActionHistroy.html" class="btn btn-info btn-sm">
+                              <i class="fa fa-history me-1"></i>History
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Neha Sharma</td>
+                          <td>Channel Partner</td>
+                          <td>3</td>
+                          <td>REFNEHA33</td>
+                          <td>
+                            <a href="refferalActionHistroy.html" class="btn btn-info btn-sm">
+                              <i class="fa fa-history me-1"></i>History
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Kunal Bhatt</td>
+                          <td>Business</td>
+                          <td>6</td>
+                          <td>REFKUNAL66</td>
+                          <td>
+                            <a href="refferalActionHistroy.html" class="btn btn-info btn-sm">
+                              <i class="fa fa-history me-1"></i>History
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <!-- Zero Configuration  Ends-->
             </div>
           </div>
-      </div>
-          
+          </div>
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
@@ -384,6 +385,7 @@
             </div>
           </div>
         </footer>
+      </div>
     </div>
     <!-- latest jquery-->
     <script src="assets/js/jquery.min.js"></script>
@@ -409,5 +411,6 @@
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>

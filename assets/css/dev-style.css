@@ -14,3 +14,41 @@
     width: 100%;
   }
 }
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+
+/* bussinesslisting view page in img and video section style */
+.blur-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .blur-container img {
+    filter: blur(4px);
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .pending-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    z-index: 2;
+  }
+  .media-box {
+    height: 250px; 
+    object-fit: cover;
+    width: 100%;
+  }
