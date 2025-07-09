@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -30,6 +30,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/quill.bubble.css">
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/datatables.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
@@ -37,9 +39,9 @@
     <!-- App css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dev-style.css">
-    <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
 </head>
   <body> 
     <!-- loader starts-->
@@ -114,7 +116,7 @@
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-       <div class="sidebar-wrapper" data-layout="stroke-svg">
+        <div class="sidebar-wrapper" data-layout="stroke-svg">
           <div class="logo-wrapper"><a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
@@ -168,7 +170,7 @@
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                  <a class="sidebar-link active" href="teamlist.html">
+                  <a class="sidebar-link" href="teamlist.html">
                   <i class="fa fa-users text-white" aria-hidden="true"></i>
                   <span class="lan-2">Team Management</span></a>
                 </li>
@@ -275,7 +277,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Team Add</h4>
+                  <h4>Category Management</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
@@ -286,8 +288,8 @@
                         </svg>
                         </a>
                     </li>
-                    <li class="breadcrumb-item">Team</li>
-                    <li class="breadcrumb-item active">Team Form</li>
+                    <!-- <li class="breadcrumb-item">Design List</li> -->
+                    <li class="breadcrumb-item active">Category Management</li>
                   </ol>
                 </div>
               </div>
@@ -295,123 +297,46 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
+            <div class="container-fluid">
             <div class="row">
-              <!-- Zero Configuration  Starts-->
-              <div class="col-md-12">
+              <div class="col-sm-12">
                 <div class="card">
+                  <div class="card-header">
+                    <h4>Snow Theme</h4>
+                  </div>
                   <div class="card-body">
-                    <div class="row shopping-wizard">
-                      <div class="col-12"> 
-                            <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
-                              <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
-                                <form class="row g-3 needs-validation" novalidate="">
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customName">User Name<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="customName" type="text" required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="email">Email<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="email" type="email"  required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="ContactNumber">Contact Number <span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="ContactNumber" type="number"  required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="BirthDate">BirthDate<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="BirthDate" type="date"  required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customState-wizard">Role<span
-                                      class="txt-danger">*</span></label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select Role</option>
-                                      <option>Admin</option>
-                                      <option>Product Management</option>
-                                      <option>Order Management</option>
-                                      <option>Item Management</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid role.</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customUrl">Password</label>
-                                    <input class="form-control" id="customUrl" type="password" required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-12">
-                                    <label class="form-label" for="Address">Address</label>
-                                    <input class="form-control" id="Address" type="text" required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="Country">Country<span
-                                      class="txt-danger">*</span></label>
-                                    <select class="form-select" id="Country" required="">
-                                      <option selected="" disabled="" value="">Select Country</option>
-                                      <option>India</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid Country.</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="State">State<span
-                                      class="txt-danger">*</span></label>
-                                    <select class="form-select" id="State" required="">
-                                      <option selected="" disabled="" value="">Select State</option>
-                                      <option>Gujrat</option>
-                                      <option>Rajasthan</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid State.</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="City">City<span
-                                      class="txt-danger">*</span></label>
-                                    <select class="form-select" id="City" required="">
-                                      <option selected="" disabled="" value="">Select City</option>
-                                      <option>Rajkot</option>
-                                      <option>Baroda</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid City.</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customZip">Zip Code<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="customZip" type="text" inputmode="numeric" pattern="[0-9]*" required>
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-12">
-                                    <label class="form-label" for="Description">Description<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="Description" type="text"  required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-12 text-center mt-3">
-                                    <button class="btn btn-primary" type="submit">Save</button>
-                                  </div>
-                                  
-                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
-                              
-                                
-                                <script>
-                                  // Initialize CKEditor
-                                  ClassicEditor
-                                    .create(document.querySelector('#editor'))
-                                    .catch(error => {
-                                      console.error(error);
-                                    });
-                                </script>
-                                </form>
-                              </div>
-                            </div>
+                    <div class="toolbar-box">
+                      <div id="toolbar5"><span class="ql-formats">
+                          <select class="ql-size">
+                            <option value="small">Small</option>
+                            <option selected="">Normal</option>
+                            <option value="large">Large</option>
+                            <option value="huge">Huge</option>
+                          </select><span class="ql-formats">
+                            <button class="ql-bold">Bold</button>
+                            <button class="ql-italic">Italic</button>
+                            <button class="ql-underline">Underline</button>
+                            <button class="ql-strike">Strike</button>
+                           
+                            <button class="ql-list" value="ordered">List</button>
+                            <button class="ql-list" value="bullet">Bullet</button>
+                            <button class="ql-indent" value="-1"></button>
+                            <button class="ql-indent" value="+1"></button></span><span class="ql-formats">
+                            <button class="ql-link">Link</button>
+                            
+                            <button class="ql-align" value=""></button>
+                            <button class="ql-align" value="center"></button>
+                            <button class="ql-align" value="right"></button>
+                            <button class="ql-align" value="justify"></button></span></span></div>
+                      <div class="quill-paragraph" id="editor5">
+                        
                       </div>
-                      <!-- Container-fluid Ends-->
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Zero Configuration  Ends-->
             </div>
+          </div>
           </div>
       </div>
           
@@ -446,11 +371,15 @@
     <script src="assets/js/slick/slick.min.js"></script>
     <script src="assets/js/slick/slick.js"></script>
     <script src="assets/js/header-slick.js"></script>
+        <script src="../assets/js/editors/quill.js"></script>
     <!-- calendar js-->
     <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
     <script src="assets/js/datatable/datatables/datatable.custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
+    <!-- calendar js-->
+    <script src="../assets/js/editors/quill.js"></script>
+    <script src="../assets/js/custom-add-product3.js"></script>
   </body>
 </html>
